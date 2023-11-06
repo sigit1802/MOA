@@ -1,0 +1,486 @@
+/* NAVBAR */
+.navbar {
+  position: fixed; /* Membuat navbar tetap pada posisi */
+  top: 0; /* Menempatkan navbar di bagian atas halaman */
+  width: 100%; /* Lebar navbar 100% dari halaman */
+  background-color: transparan; /* Warna latar belakang navbar dengan tingkat kejernihan 0.7 (70%) */
+  color: white; /* Warna teks navbar */
+  padding: 10px 0; /* Ruang di atas dan bawah teks navbar */
+  z-index: 1000; /* Membuat navbar di atas elemen-elemen lain */
+}
+
+/* CSS untuk navbar tautan teks */
+.navbar a.nav-link {
+  color: white; /* Warna teks tautan menjadi putih */
+  text-decoration: none; /* Menghilangkan garis bawah bawaan pada tautan */
+}
+
+.navbar a.navbar-brand{
+  color:white;
+}
+
+/* CSS untuk tautan teks saat digerakkan (hover) */
+.navbar a.nav-link:hover {
+  color: blue; /* Warna teks tautan saat digerakkan menjadi lebih terang (opsional) */
+}
+
+/* CSS untuk tombol */
+.btn {
+  border-radius: 30px;
+  background-color: blue; /* Latar belakang transparan */
+  color: white; /* Warna teks tombol saat kondisi normal */
+  transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna latar belakang dan teks selama 0.3 detik */
+}
+
+/* CSS untuk tombol saat dihover */
+.btn:hover {
+  background-color: white; /* Latar belakang tombol menjadi putih saat dihover */
+  color: blue; /* Warna teks tombol menjadi biru saat dihover */
+}
+
+/* CSS untuk tombol saat diklik */
+.btn:active {
+  background-color: white; /* Latar belakang tombol tetap putih saat diklik */
+  color: blue; /* Warna teks tombol tetap biru saat diklik */
+}
+
+
+/* NAVBAR */
+
+/* Home */
+.Home::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height:100vh;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Warna hitam dengan tingkat transparansi 0.3 */
+  z-index: -1; /* Mengatur z-indeks di bawah konten utama */
+}
+
+
+.Home{
+  display: flex;
+  padding: 0 35px;
+  flex-direction: column; /* Mengatur tata letak ke vertikal */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../image/landingpage.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.seni {
+  color: white;
+  font-size: 20px;
+  font-family: Zodiak Variable;
+  font-weight: 540;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: center;
+ margin-top: 80px; /* Menambahkan margin atas yang lebih besar */
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 72px;
+  font-family: Zodiak Variable;
+  font-weight: 540;
+  line-height: 60px;
+  word-wrap: break-word;
+  margin-top: 10px; /* Margin negatif untuk mengangkat elemen .content */
+}
+
+.content2 {
+  width: 100%; 
+  text-align: center; 
+  color: white; 
+  font-size: 22px; 
+  font-family: DM Sans; 
+  font-weight: 400; 
+  line-height: 26px; 
+  word-wrap: break-word
+}
+
+
+  .hire {
+    display: flex;
+    justify-content: center; /* Mengatur konten di tengah secara horizontal */
+    align-items: center; /* Mengatur konten di tengah secara vertikal (opsional) */
+    margin-top:20px;
+    margin-bottom: 30px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .wrapper{
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 240px;
+    border-radius: 40px;
+    margin-bottom:40px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+
+.about-us{
+  display: flex;
+  padding: 60px 35px;
+  flex-direction: column; /* Mengatur tata letak ke vertikal */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 3px 2px;
+}
+.about-col p1{
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 55px;
+  font-family: Zodiak Variable;
+  font-weight: 540;
+  line-height: 60px;
+  word-wrap: break-word;
+}
+
+.about-col img{
+  width: 100%;
+}
+.about-col h1{
+  padding-top: 0; 
+}
+.about-col p{
+  font-size: 20px;
+  padding: 15px 0 25px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+h5{
+  margin-bottom:20px;
+  color:blue;
+}
+
+.kotak {
+  flex-basis: 48%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  border: 30px solid rgba(173, 216, 230, 0.2); /* Garis kotak dengan warna biru muda (70% transparan) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Mengatur tata letak ke bawah */
+  /* Opacity tidak diperlukan untuk mengatur transparansi garis */
+}
+
+.gambar {
+  border-radius:20px;
+  border: 2px solid rgba(173, 216, 230, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px 20px 20px 20px;
+  max-width: 100%; /* Maksimum lebar gambar */
+  max-height: 100%; /* Maksimum tinggi gambar */
+  display: block; /* Agar gambar ditampilkan sebagai elemen blok */
+  margin: auto; /* Menggeser gambar ke tengah kotak */
+  margin-top:10px;
+}
+
+.gambar p{
+  font-size:12px;
+}
+
+.gambar h4{
+  font-size:20px;
+  font-weight: bold;
+}
+
+.gambar img {
+  border-radius: 99%; /* Membuat gambar menjadi lingkaran */
+  max-width: 3.5%; /* Maksimum lebar gambar */
+  max-height: 3.5%; /* Maksimum tinggi gambar */
+  display: block; /* Agar gambar ditampilkan sebagai elemen blok */
+  teks-align: left; /* Menggeser gambar ke sebelah kiri */
+}
+
+.profil {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  align-items: center; /* Mengatur elemen secara vertikal */
+  margin-bottom: 15px;
+}
+
+.profil .img {
+  max-width: 30px; /* Maksimum lebar gambar */
+  max-height: 30px; /* Maksimum tinggi gambar */
+  margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
+p {
+  margin-top:10px;
+  margin: 0; /* Menghapus margin bawaan paragraf */
+}
+
+
+.btn2{
+  margin-top:10px;
+  border-radius: 30px;
+  background-color: rgba(173, 216, 230, 0.6); /* Latar belakang transparan */
+  color: rgba(0, 0, 0, 0.6); /* Warna teks tombol saat kondisi normal */
+  transition: background-color 0.3s, color 0.3s;
+  padding:4px 4px 4px 4px;
+  border:none;
+}
+
+.about-packages{
+  display: flex;
+  padding: 0 35px;
+  flex-direction: column; /* Mengatur tata letak ke vertikal */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  background-color: rgba(173, 216, 230, 0.2); /* Latar belakang transparan */
+  width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.about-packages .about-col{
+  align-items: center; /* Mengatur elemen secara vertikal */
+  margin-top: 15px;
+}
+.about-colpackages{
+  flex-basis: 48%;
+  padding: 30px 2px;
+  font-size: 20px;
+}
+.about-colpackages img{
+  width: 100%;
+}
+.about-colpackages h1{
+  padding-top: 0; 
+}
+.about-colpackages p{
+  padding: 15px 0 25px;
+}
+.kotak .card{
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: center; /* Mengatur gambar di tengah secara horizontal */
+  align-items: center; /* Mengatur gambar di tengah secara vertikal */
+}
+
+.button-group {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+}
+.card .card-img-top{
+  border-radius:50%;
+  weight:40px;
+  width:40px;
+}
+
+.card .btn2{
+  margin-top:10px;
+  border-radius: 30px;
+  background-color: rgba(173, 216, 230, 0.6); /* Latar belakang transparan */
+  color: rgba(0, 0, 0, 0.6); /* Warna teks tombol saat kondisi normal */
+  transition: background-color 0.3s, color 0.3s;
+  padding:4px 4px 4px 4px;
+  border:2px solid;
+  margin-right:10px;
+}
+.lp{
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: space-between; /* Mengatur elemen di ujung kiri dan kanan */
+  align-items: center; /* Mengatur elemen secara vertikal */
+}
+
+.box-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.box-container .headingg{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.box-container .headingg h3{
+  font-size: 5em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #7FE817;
+}
+
+.box-container .headingg h3 span{
+  font-weight: 100;
+}
+.box-container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.box-container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.box-container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Opsi: Tengahkan vertikal jika diperlukan */
+  padding: 10px; /* Opsi: Tambahkan padding sesuai kebutuhan */
+  color: 	#000000; /* Opsi: Warna teks */
+}
+
+.brand {
+  font-weight: bold;
+  font-size:4rem; /* 2 kali ukuran font elemen root */
+}
+
+.horizontal-nav {
+  display: flex;
+}
+
+.horizontal-nav Nav.Link {
+  margin-right: 10px; /* Memberikan jarak antara elemen Nav.Link */
+}
+
+.copyright {
+  margin-left: 60px;
+  font-size: 10px; /* 2 kali ukuran font elemen root */
+}
+
+/* Footer */
+footer {
+  padding: 20px; /* Ruang di sekitar isi footer */
+  text-align: center; /* Posisi teks di tengah */
+}
+
+.footer-content {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: space-between; /* Mengatur elemen di ujung kiri dan kanan */
+  align-items: center; /* Mengatur elemen secara vertikal */
+}
+
+ul {
+  list-style: none; /* Menghilangkan marker (bullet) daftar */
+  padding: 0; /* Menghilangkan padding bawaan */
+  margin: 0; /* Menghilangkan margin bawaan */
+}
+
+li {
+  display: inline; /* Menampilkan elemen daftar secara horizontal */
+  margin-right: 20px; /* Memberikan jarak antara elemen daftar */
+}
+
+.footer{
+  teks-align:left;
+}
+
+/* Tambahkan aturan CSS lainnya sesuai kebutuhan Anda */
+
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 769px){
+    .box-container .box{
+   flex-direction: column;
+  }
+
+.box-container .box .dream{
+  width: 100%;
+}
+
+}
