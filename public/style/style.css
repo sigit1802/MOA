@@ -461,6 +461,43 @@ li {
   teks-align:left;
 }
 
+
+/* Register & Login */
+
+.register{
+  background: url("../image/landingpage.jpeg");
+  min-height: 100vh;
+  display: flex;
+}
+.btn1 {
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  display: block;
+  border-radius: 30px;
+  background-color: blue; /* Latar belakang transparan */
+  color: white; /* Warna teks tombol saat kondisi normal */
+  width: 400px; /* Menentukan lebar tombol */
+  transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna latar belakang dan teks selama 0.3 detik */
+}
+
+/* CSS untuk tombol saat dihover */
+.btn1:hover {
+  background-color: white; /* Latar belakang tombol menjadi putih saat dihover */
+  color: blue; /* Warna teks tombol menjadi biru saat dihover */
+}
+
+/* CSS untuk tombol saat diklik */
+.btn1:active {
+  background-color: white; /* Latar belakang tombol tetap putih saat diklik */
+  color: blue; /* Warna teks tombol tetap biru saat diklik */
+}
+
+.custom-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 /* Tambahkan aturan CSS lainnya sesuai kebutuhan Anda */
 
   @media screen and (max-width: 900px) {
