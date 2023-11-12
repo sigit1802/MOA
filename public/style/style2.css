@@ -1,0 +1,146 @@
+/* Inspirasi */
+.btn3 {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan (blue dengan alpha 0.5) */
+    color: white; /* Warna teks tombol saat kondisi normal */
+    transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna latar belakang dan teks selama 0.2 detik */
+  }
+  
+  /* CSS untuk tombol saat dihover */
+  .btn3:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Latar belakang tombol menjadi putih dengan alpha 0.5 saat dihover */
+    color: blue; /* Warna teks tombol menjadi biru saat dihover */
+  }
+  
+  /* CSS untuk tombol saat diklik */
+  .btn3:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Latar belakang tombol tetap putih dengan alpha 0.5 saat diklik */
+    color: blue; /* Warna teks tombol tetap biru saat diklik */
+  }
+  
+  
+  
+  /* NAVBAR */
+  
+  /* Home */
+  
+  .search-box {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-top:5px;
+    margin-bottom:5px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .title2{
+    color:white;
+    margin-top:5px;
+    margin-bottom:1px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-right:10px;
+  }
+  
+  .isicontent {
+    margin-bottom: 20px;
+  }
+  
+  .card-img {
+    width: 18rem;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .avatar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rounded-circle {
+    border-radius: 50%;
+    margin-right: -5px;
+    width: 20px;  /* Ubah ukuran lebar gambar */
+    height: 20px; /* Ubah ukuran tinggi gambar */
+  }
+  
+  h1 {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .muat{
+    border-radius: 30px;
+    padding:10px 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan (blue dengan alpha 0.5) */
+    color: blue; /* Warna teks tombol saat kondisi normal */
+    transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna latar belakang dan teks selama 0.2 detik */
+  }
+  
+  .muat:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Latar belakang tombol menjadi putih dengan alpha 0.5 saat dihover */
+    color: blue; /* Warna teks tombol menjadi biru saat dihover */
+  }
+  
+  /* CSS untuk tombol saat diklik */
+  .muat:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Latar belakang tombol tetap putih dengan alpha 0.5 saat diklik */
+    color: blue; /* Warna teks tombol tetap biru saat diklik */
+  }
+  
+  .Home{
+    display: flex;
+    padding: 0 35px;
+    flex-direction: column; /* Mengatur tata letak ke vertikal */
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: tomato;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  .content {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 72px;
+    font-family: Zodiak Variable;
+    font-weight: 540;
+    line-height: 60px;
+    word-wrap: break-word;
+    margin-top: 10px; /* Margin negatif untuk mengangkat elemen .content */
+  }
+  
+  .content2 {
+    width: 100%; 
+    text-align: center; 
+    color: white; 
+    font-size: 22px; 
+    font-family: DM Sans; 
+    font-weight: 400; 
+    line-height: 26px; 
+    word-wrap: break-word
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  
+  }
