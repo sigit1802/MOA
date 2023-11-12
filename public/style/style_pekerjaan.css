@@ -1,0 +1,279 @@
+
+.kotak {
+    flex-basis: 48%;
+    padding: 10px 10px 10px 10px; /* Garis kotak dengan warna biru muda (70% transparan) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Mengatur tata letak ke bawah */
+    /* Opacity tidak diperlukan untuk mengatur transparansi garis */
+  }
+  
+  .gambar {
+    border-radius:20px;
+    border: 2px solid rgba(173, 216, 230, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 20px 20px 20px;
+    max-width: 100%; /* Maksimum lebar gambar */
+    max-height: 100%; /* Maksimum tinggi gambar */
+    display: block; /* Agar gambar ditampilkan sebagai elemen blok */
+    margin: auto; /* Menggeser gambar ke tengah kotak */
+    margin-top:10px;
+  }
+
+  .button {
+    width: 120px;
+    height: 45px;
+    left: 502px;
+    top: 499px;
+  
+    background: #444CE7;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .button1 {
+    width: 120px;
+    height: 45px;
+    left: 502px;
+    top: 499px;
+  
+    color: #00d0ff;
+    color: #444CE7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 32px;
+  }
+
+  .jumbotron{
+    background-image: url(../image/gambar.jpg);
+    background-size: cover;
+    height: 550px;
+  }
+
+  .jumbotron .display-4{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-bar{
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+  }
+  .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+  }
+
+  .search-bar button img {
+    width: 25px;
+  }
+  .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+  }
+
+  .badge{
+    width: 150px;
+    height: 35px;
+    left: 502px;
+    top: 399px;
+    border-radius: 60px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .badge-p{
+    width: 150px;
+    height: 45px;
+    left: 502px;
+    top: 499px;
+    border-radius: 60px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .badge1{
+    width: 15%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  .col-5 p {
+    color: black;
+  }
+
+  .nav-link a {
+    color: black;
+  }
+
+  .card {
+    width: 380px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 35px;
+    margin-top: 30px;
+    padding: 10px 20px;
+  }
+  
+  .profile {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00b6df;
+  }
+  
+  .name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #494949;
+    padding: 4px 0 10px 0;
+  }
+  
+  .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  
+    color: #494949;
+  }
+
+  .img {
+    width: 70px;
+    height: 70px; 
+    border: 4px solid #5ce2ff;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-karya {
+    width: 70px;
+    height: 70px; 
+  }
+
+  .footer{
+    display: flex;
+  justify-content: space-between;
+  align-items: end; /* Opsi: Tengahkan vertikal jika diperlukan */
+  padding: 10px; /* Opsi: Tambahkan padding sesuai kebutuhan */
+  color: 	#000000; /* Opsi: Warna teks */
+  }
+
+  .copyright {
+    margin-left: 60px;
+    font-size: 10px; /* 2 kali ukuran font elemen root */
+  }
+
+  .btn2{
+    margin-top:10px;
+    border-radius: 30px;
+    background-color: rgba(173, 216, 230, 0.6); /* Latar belakang transparan */
+    color: rgba(0, 0, 0, 0.6); /* Warna teks tombol saat kondisi normal */
+    transition: background-color 0.3s, color 0.3s;
+    padding:4px 4px 4px 4px;
+    border:none;
+  }
+  
+  /* Footer */
+footer {
+    padding: 20px; /* Ruang di sekitar isi footer */
+    text-align: end; /* Posisi teks di tengah */
+  }
+
+  .footer-content {
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+    justify-content: space-between; /* Mengatur elemen di ujung kiri dan kanan */
+    align-items: end; /* Mengatur elemen secara vertikal */
+  }
+  
+  ul {
+    list-style: none; /* Menghilangkan marker (bullet) daftar */
+    padding: 0; /* Menghilangkan padding bawaan */
+    margin: 0; /* Menghilangkan margin bawaan */
+  }
+
+  li {
+    display: inline; /* Menampilkan elemen daftar secara horizontal */
+    margin-right: 20px; /* Memberikan jarak antara elemen daftar */
+  }
+  /* desktop version */
+  @media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+      color: white !important;
+    }
+    .nav-link {
+      text-transform: uppercase;
+      margin-right: 30px;
+      color: black;
+    }
+    
+
+    .nav-link:hover::after{
+      content: '';
+      display: block;
+      border-bottom: 3px solid #fff;
+      margin: auto;
+      padding-bottom: 5px;
+      margin-bottom: -8px;
+    }
+
+    .jumbotron{
+      
+    margin-top: -75px;
+    }
+   }
